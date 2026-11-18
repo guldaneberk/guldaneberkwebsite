@@ -5,60 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Atölyeler ve Etkinlikler · Güldane Berk</title>
   <meta name="description" content="Güldane Berk'in atölyeleri ve etkinlikleri: bir masal, bir fotoğraf, bir soru. Birlikte düşünmek için küçük çemberler.">
-  <link rel="icon" type="image/png" href="../assets/img/fil.png">
+  <meta name="theme-color" content="#F8F2E8">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/monogram.svg">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 <body>
-
 <header class="ust">
   <div class="kap">
-    <a class="logo" href="../" aria-label="Güldane Berk ana sayfa"><img src="../assets/img/logo-yatay.png" alt="Güldane Berk"></a>
-    <button class="menu-dugme" aria-expanded="false" aria-controls="menu" aria-label="Menü"><span></span><span></span><span></span></button>
+    <a class="marka" href="../" aria-label="Güldane Berk ana sayfa">
+      <img src="../assets/img/fil.svg" alt="" width="64" height="36">
+      <span><span class="marka-ad">Güldane Berk</span><span class="marka-alt">Hikâyelerle Koçluk</span></span>
+    </a>
+    <button class="menu-dugme" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
     <ul class="menu" id="menu">
       <li><a href="../#hakkimda">Hakkımda</a></li>
       <li><a href="../#hizmetler">Hizmetler</a></li>
-      <li><a href="./" aria-current="page">Atölyeler</a></li>
+      <li><a href="../atolyeler/" aria-current="page">Atölyeler</a></li>
       <li><a href="../#kitap">Kitap</a></li>
-      <li><a href="../#iletisim">İletişim</a></li>
+      <li><a class="yaz" href="../#iletisim">Bana yazın</a></li>
     </ul>
   </div>
 </header>
 
 <main>
-  <section>
+  <section class="sayfa-ust">
     <div class="kap">
-      <p class="etiket">Atölyeler ve Etkinlikler</p>
-      <h2>Bir masal, bir fotoğraf, bir soru.</h2>
-      <p>Birlikte düşünmek için küçük çemberler.</p>
+      <div class="panel">
+        <div>
+          <p class="etiket">Atölyeler ve Etkinlikler</p>
+          <h1>Bir masal, bir fotoğraf, bir soru.</h1>
+          <p class="giris-metni" style="margin:0">Birlikte düşünmek için küçük çemberler.</p>
+        </div>
+        <img src="../assets/img/fil.svg" alt="" width="180" height="101">
+      </div>
+    </div>
+  </section>
 
+  <section style="padding-top:24px">
+    <div class="kap">
       <!--
-        YENİ ETKİNLİK: aşağıdaki <article> bloğunu kopyalayın, bilgileri değiştirin.
-        Etkinlik sayfası için: atolyeler/zavalli-mi-o-sindirella/ klasörünü kopyalayıp yeniden adlandırın.
-        Geçmiş etkinlikleri listeden çıkarın ya da sayfanın en altına taşıyın.
+        YENİ ETKİNLİK: bir <a class="kart"> bloğunu kopyalayın ve bilgileri değiştirin.
+        Etkinlik sayfası için atolyeler/zavalli-mi-o-sindirella/ klasörünü kopyalayıp yeniden adlandırın.
+        Bant rengi: kart-bant (mercan), kart-bant gok, kart-bant gunes.
       -->
       <div class="kartlar">
 
-        <!-- ÖRNEK 1 -->
-        <article class="kart">
-          <h3>Zavallı mı o Sindirella?</h3>
-          <p class="kimler">Kendi hikâyesine yeni bir gözle bakmak isteyenler için.</p>
-          <p class="detay">
-            <span>[Tarih] · [Saat] · [Süre]</span>
-            <span>Online · Kontenjan: [sayı]</span>
-          </p>
-          <a class="ileri" href="zavalli-mi-o-sindirella/">Detaylar ve kayıt →</a>
-        </article>
+        <a class="kart" href="zavalli-mi-o-sindirella/">
+          <div class="kart-bant"></div>
+          <div class="kart-ic">
+            <span class="tarih-rozet">[Tarih] · [Saat]</span>
+            <h3>Zavallı mı o Sindirella?</h3>
+            <p class="kimler">Kendi hikâyesine yeni bir gözle bakmak isteyenler için.</p>
+            <p class="bicim">Online · [Süre] · Kontenjan: [sayı]</p>
+            <span class="ileri">Detaylar ve kayıt →</span>
+          </div>
+        </a>
 
-        <!-- ÖRNEK 2 -->
-        <article class="kart">
-          <h3>Hikâye Tasarım Atölyesi</h3>
-          <p class="kimler">Takımlar ve kurumlar için.</p>
-          <p class="detay">
-            <span>[Tarih] · [Saat] · [Süre]</span>
-            <span>Yüz yüze · [Yer] · Kontenjan: [sayı]</span>
-          </p>
-          <a class="ileri" href="https://ig.me/m/guldaneberk">Bilgi almak için yazın →</a>
-        </article>
+        <a class="kart" href="https://ig.me/m/guldaneberk">
+          <div class="kart-bant gok"></div>
+          <div class="kart-ic">
+            <span class="tarih-rozet">[Tarih] · [Saat]</span>
+            <h3>Hikâye Tasarım Atölyesi</h3>
+            <p class="kimler">Takımlar ve kurumlar için.</p>
+            <p class="bicim">Yüz yüze · [Yer] · Kontenjan: [sayı]</p>
+            <span class="ileri">Bilgi almak için yazın →</span>
+          </div>
+        </a>
 
       </div>
     </div>
@@ -67,8 +81,17 @@
 
 <footer class="alt-bilgi">
   <div class="kap">
-    <img src="../assets/img/logo-yatay.png" alt="Güldane Berk">
-    <p>© 2026 Güldane Berk · <a href="https://instagram.com/guldaneberk">Instagram</a> · <a href="mailto:guldaneberk@gmail.com">E-posta</a></p>
+    <img class="logo-dikey" src="../assets/img/logo-dikey.svg" alt="Güldane Berk · Profesyonel Koç · PCC · AATC" width="170" height="102">
+    <p class="slogan">Hikâyen<br>stratejindir.</p>
+    <nav aria-label="Alt menü">
+      <a href="../#hakkimda">Hakkımda</a>
+      <a href="../#hizmetler">Hizmetler</a>
+      <a href="../atolyeler/">Atölyeler</a>
+      <a href="../#kitap">Kitap</a>
+      <a href="https://instagram.com/guldaneberk">Instagram</a>
+      <a href="mailto:guldaneberk@gmail.com">guldaneberk@gmail.com</a>
+    </nav>
+    <p class="telif">© 2026 Güldane Berk · Tüm hakları saklıdır.</p>
   </div>
 </footer>
 
